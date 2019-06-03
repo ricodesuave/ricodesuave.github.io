@@ -18,6 +18,8 @@
             function goBack() {
                 one.removeChild(document.getElementById("one").firstChild);
                 var node = document.createElement("h1");
+                node.setAttribute("onclick", "chng2butt()");
+                node.setAttribute("id", "header");
                 var x = document.getElementById("one").appendChild(node);
                 x.innerHTML=
                 "Please select your corresponding button";
