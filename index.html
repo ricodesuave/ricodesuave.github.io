@@ -4,22 +4,28 @@
         <title>Francisco de Torres</title>
         <script>
             function fxnSimon() {
-            document.getElementById("thisOne").innerHTML = "Simon is cool, but sucks at pool! :P";
+                document.getElementById("thisOne").innerHTML = "Simon is cool, but sucks at pool! :P";
             }
             function fxnJose() {
-            document.getElementById("thisOne").innerHTML = "HOLA JOSEFINA!";
+                document.getElementById("thisOne").innerHTML = "HOLA JOSEFINA!";
             }
             function fxnJoey() {
-            document.getElementById("thisOne").innerHTML = "What's up Joey, go Dayton Flyers!";
+                document.getElementById("thisOne").innerHTML = "What's up Joey, go Dayton Flyers!";
             }
             function fxnRamiz() {
-            document.getElementById("thisOne").innerHTML = "no u!!!!!!!!!!";
+                document.getElementById("thisOne").innerHTML = "no u!!!!!!!!!!";
+            }
+            function chng2butt() {
+                document.removeChild(document.getElementById("header"));
+                var butt=document.createElement("button");
+                butt.innerHTML="Hello";
+                document.appendChild(butt);
             }
         </script>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>Please select your corresponding button</h1>
+        <h1 id="header" onclick="chng2butt()">Please select your corresponding button</h1>
         <br>
         <div><button type="button" onclick="fxnSimon()">Simon's button</button></div>
         <br>
