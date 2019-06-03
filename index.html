@@ -16,7 +16,7 @@
                 document.getElementById("thisOne").innerHTML = "no u!!!!!!!!!!";
             }
             function goBack() {
-                one.removeChild("button");
+                one.removeChild(document.getElementById("one").firstChild);
                 var node = document.createElement("h1");
                 var x = document.getElementById("one").appendChild(node);
                 x.innerHTML=
