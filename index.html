@@ -15,10 +15,15 @@
             function fxnRamiz() {
                 document.getElementById("thisOne").innerHTML = "no u!!!!!!!!!!";
             }
+            function goBack() {
+                document.body.getElementById("one").getElementsByTagName("button").innerHTML=
+                "Please select your corresponding button";
+            }
             function chng2butt() {
                 document.getElementById("one").removeChild(document.getElementById("header"));
                 var butt=document.createElement("button");
                 butt.innerHTML="Hello";
+                butt.addEventListener(click, goBack());
                 document.getElementById("one").appendChild(butt);
             }
         </script>
