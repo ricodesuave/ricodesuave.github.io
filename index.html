@@ -16,16 +16,16 @@
                 document.getElementById("thisOne").innerHTML = "no u!!!!!!!!!!";
             }
             function chng2butt() {
-                document.body.removeChild(document.getElementById("header"));
+                document.body.one.removeChild(document.getElementById("header"));
                 var butt=document.createElement("button");
                 butt.innerHTML="Hello";
-                document.body.appendChild(butt);
+                document.body.one.appendChild(butt);
             }
         </script>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1 id="header" onclick="chng2butt()">Please select your corresponding button</h1>
+        <div id="one"><h1 id="header" onclick="chng2butt()">Please select your corresponding button</h1></div>
         <br>
         <div><button type="button" onclick="fxnSimon()">Simon's button</button></div>
         <br>
