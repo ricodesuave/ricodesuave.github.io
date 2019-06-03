@@ -16,7 +16,8 @@
                 document.getElementById("thisOne").innerHTML = "no u!!!!!!!!!!";
             }
             function goBack() {
-                var x=document.getElementById("one").appendChild("h1");
+                var node = document.createElement("h1");
+                var x = document.getElementById("one").appendChild(node);
                 x.innerHTML=
                 "Please select your corresponding button";
             }
