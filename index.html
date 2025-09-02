@@ -3,47 +3,33 @@
     <head>
         <title>Francisco de Torres</title>
         <script>
-            function fxnSimon() {
-                document.getElementById("thisOne").innerHTML = "Simon is cool, but sucks at pool! :P";
+            function showResume() {
+                document.getElementById("thisOne").innerHTML = "Resume goes here";
             }
-            function fxnJose() {
-                document.getElementById("thisOne").innerHTML = "HOLA JOSEFINA!";
+            function showProjects() {
+                document.getElementById("thisOne").innerHTML = "Projects go here";
             }
-            function fxnJoey() {
-                document.getElementById("thisOne").innerHTML = "What's up Joey, go Dayton Flyers!";
+            function showAwards() {
+                document.getElementById("thisOne").innerHTML = "Awards go here";
             }
-            function fxnRamiz() {
-                document.getElementById("thisOne").innerHTML = "no u!!!!!!!!!!";
+            function showVolunteer() {
+                document.getElementById("thisOne").innerHTML = "Volunteer goes here";
             }
-            function goBack() {
-                one.removeChild(document.getElementById("one").firstChild);
-                var node = document.createElement("h1");
-                node.setAttribute("onclick", "chng2butt()");
-                node.setAttribute("id", "header");
-                var x = document.getElementById("one").appendChild(node);
-                x.innerHTML=
-                "Please select your corresponding button";
-            }
-            function chng2butt() {
-                document.getElementById("one").removeChild(document.getElementById("header"));
-                var butt=document.createElement("button");
-                butt.innerHTML="Hello";
-                document.getElementById("one").appendChild(butt);
-                butt.addEventListener("click", goBack);
-            }
+
         </script>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div id="one"><h1 id="header" onclick="chng2butt()">Please select your corresponding button</h1></div>
+        <div id="welcome"><h1 id="header" onclick="chng2butt()">Welcome to my site!</h1></div>
+        <div id="one"><h1 id="header" onclick="chng2butt()">Check out these sections of my portfolio:</h1></div>
         <br>
-        <div><button type="button" onclick="fxnSimon()">Simon's button</button></div>
+        <div><button type="button" onclick="showResume()">Resume</button></div>
         <br>
-        <div><button type="button" onclick="fxnJose()">Jose's button</button></div>
+        <div><button type="button" onclick="showProjects()">Projects</button></div>
         <br>
-        <div><button type="button" onclick="fxnJoey()">Joey's button</button></div>
+        <div><button type="button" onclick="showAwards()">Awards</button></div>
         <br>
-        <div><button type="button" onclick="fxnRamiz()">Ramiz's button</button></div>
+        <div><button type="button" onclick="showVolunteer()">Volunteer</button></div>
 
         <p id="thisOne">This will change >:)</p>
     </body>
